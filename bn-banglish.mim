@@ -1,0 +1,162 @@
+;; There are some helps about using this file in the Helps section below.
+
+;; bn-probhat.mim -- Bengali input method for probhat layout
+;; Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
+
+;; This file is not part of the m17n contrib; a sub-part of the m17n
+;; library.
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method en banglishIPA)
+
+(description "Bengali input method for Banglish layout.
+
+
+Helps:  ==> 
+Setup: Install ibus-m17n; create a folder in home directory named ~/.m17n.d and put this MIM file in there. Then reboot.
+1. (mohapran) or aspirated sounds like খ can be written with kh which will look like kʰ
+2. for (chandrabindu) press shift h
+3. for অ্যা press y which will type æ
+4. for অ press f which will type ɔ
+5. for ট press v which will type ʈ
+6. for ড press w => ɖ
+7. শ => x => ʃ
+8. ঙ, ং => z => ŋ
+9. ড়, ঢ় => placed next to p in '[' which will type ɽ
+10. h is placed in q
+
+Author: Rank Coder
+")
+
+(title "ɔ")
+
+(map
+ (trans
+ 
+  ((KP_1) "1")
+  ((KP_2) "2")
+  ((KP_3) "3")
+  ((KP_4) "4")
+  ((KP_5) "5")
+  ((KP_6) "6")
+  ((KP_7) "7")
+  ((KP_8) "8")
+  ((KP_9) "9")
+  ((KP_0) "0")
+  ((KP_Decimal) ".")
+  ((KP_Divide) "/")
+  ((KP_Multiply) "*")
+  ((KP_Add) "+")
+  ((KP_Subtract) "-") 
+ 
+  ("!" ?!)
+  ("1" ?1)
+  ("@" ?@)
+  ("2" ?2)
+  ("#" ?#)
+  ("3" ?3)
+  ("$" ?৳)
+  ("4" ?4)
+  ("%" ?%)
+  ("5" ?5)
+  ("^" ?/)
+  ("6" ?6)
+  ("&" ?&)
+  ("7" ?7)
+  ("*" "*")
+  ("8" ?8)
+  ("(" ?()
+  ("9" ?9)
+  (")" ?))
+  ("0" ?0)
+  ("_" ?_)
+  ("-" ?-)
+  ("+" ?+)
+  ("=" ?=)
+  ("q" ?ɽ)
+  ("Q" ?q)
+  ("W" ?w)
+  ("w" ?ɖ)
+  ("E" ?e)
+  ("e" ?e)
+  ("R" ?r)
+  ("r" ?r)
+  ("T" ?t)
+  ("t" ?t)
+  ("y" ?æ)
+  ("Y" ?y)
+  ("U" ?u)
+  ("u" ?u)
+  ("I" ?i)
+  ("i" ?i)
+  ("O" ?o)
+  ("o" ?o)
+  ("P" ?p)
+  ("p" ?p)
+  ("{" ?{)
+  ("[" ?[)
+  ("}" ?})
+  ("]" ?])
+  ("A" ?a)
+  ("a" ?a)
+  ("S" ?s)
+  ("s" ?s)
+  ("D" ?d)
+  ("d" ?d)
+  ("F" ?f)
+  ("f" ?ɔ)
+  ("G" ?g)
+  ("g" ?ɡ)
+  ("H" ?ʰ)
+  ("h" ?h)
+  ("J" ?j)
+  ("j" ?ɟ)
+  ("K" ?k)
+  ("k" ?k)
+  ("L" ?l)
+  ("l" ?l)
+  (":" ?̃)
+  (";" ?̯)
+  ("|" ?|)
+  ("\\" ?\\)
+  ("~" ?~)
+  ("`" ?`)
+  ("Z" ?z)
+  ("z" ?ŋ)
+  ("X" ?x)
+  ("x" ?ʃ)
+  ("C" ?c)
+  ("c" ?c)
+  ("V" ?v)
+  ("v" ?ʈ)
+  ("B" ?b)
+  ("b" ?b)
+  ("N" ?n)
+  ("n" ?n)
+  ("M" ?m)
+  ("m" ?m)
+  ("<" ?<)
+  ("," ?,)
+  (">" ?>)
+  ("." ?.)
+  ("?" ??)
+  ("/" ?/)
+  ))
+ 
+(state
+  (init
+    (trans)))
