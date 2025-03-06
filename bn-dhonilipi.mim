@@ -1,7 +1,6 @@
 ;; There are some helps about using this file in the Helps section below.
 
-;; bn-probhat.mim -- Bengali input method for probhat layout
-;; Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
+
 
 ;; This file is not part of the m17n contrib; a sub-part of the m17n
 ;; library.
@@ -21,24 +20,13 @@
 ;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-(input-method en banglishIPA)
+(input-method en dhonilipiIPA)
 
 (description "Bengali input method for Banglish layout.
 
 
 Helps:  ==> 
 Setup: Install ibus-m17n; create a folder in home directory named ~/.m17n.d and put this MIM file in there. Then reboot.
-1. (mohapran) or aspirated sounds like খ can be written with kh which will look like kʰ
-2. for (chandrabindu) press shift h
-3. for অ্যা press y which will type æ
-4. for অ press f which will type ɔ
-5. for ট press v which will type ʈ
-6. for ড press w => ɖ
-7. শ => x => ʃ
-8. ঙ, ং => z => ŋ
-9. ড়, ঢ় => placed next to p in '[' which will type ɽ
-10. h is placed in q
-
 Author: Rank Coder
 ")
 
